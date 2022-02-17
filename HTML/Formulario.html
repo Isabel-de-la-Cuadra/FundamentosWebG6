@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!-- formulario metodo default GET muestra en la URL lo que ingresan al formulario-->
+    <!-- formulario metodo POST envia los parámetros ocultos-->
+    <form action="index.html" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido"><br>
+        <label for="correo">Correo: </label>
+        <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico"><br>
+        <label for=" password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu password"><br>
+
+        <!--input radio, seleccionar una opción-->
+        <input type="radio" id="femenino" name="genero" value="1">
+        <label for="femenino">Femenino: </label><br>
+
+        <input type="radio" id="masculino " name="genero" value="2">
+        <label for="masculino">Masculino: </label><br>
+
+        <input type="radio" id="noResponde" name="genero" value="3">
+        <label for="noReponde">No responde: </label><br>
+
+        <br>
+        <!--checkbox-->
+
+        <input type="checkbox" id="java" name="lenguaje1" value="1">
+        <label for="java ">Java: </label>
+        <br>
+        <input type="checkbox" id="js" name="lenguaje2" value="2">
+        <label for="js ">JavaScript: </label>
+        <br>
+        <input type="checkbox" id="python" name="lenguaje3" value="3">
+        <label for="python">Python: </label>
+        <br>
+        <br>
+        <!--select-->
+
+        <label for="lenguaje">Elija su lenguaje favorito: </label>
+        <select name="lenguajes" id="lenguajes ">
+            <option value="0">Seleccione un lenguaje de programación</option>
+            <option value="1">Java</option>
+            <option value="2">JavaScript</option>
+            <option value="3">Python</option>
+        </select>
+        <br>
+        <!--TextArea-->
+        <br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="40" minlength="4" maxlength="20"></textarea>
+        <br>
+
+        <!--transpasar valores ocultos-->
+        <input type="hidden" name="modulo" id="modulo" value="1">
+
+        <!--botones-->
+        <input type="button" value="validar">
+        <input type="submit" value="enviar">
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
