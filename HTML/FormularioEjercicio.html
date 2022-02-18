@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h2>Mi Formulario de Registro</h2>
+        <br>
+        <label for="nombre">Nombre:  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> <br>
+        <br>
+        <label for="apellido">Apellido: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido"><br>
+        <br>
+        <label for="correo">Correo electrónico: &nbsp &nbsp &nbsp &nbsp </label>
+        <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico"><br>
+        <br>
+        <label for="password">Password: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu password"><br>
+        <br>
+        <label for="passwordConfirmar">Confirma tu Password: &nbsp </label>
+        <input type="password" id="passwordConfirmar" name="passwordConfirmar" placeholder="Reingresa tu password"><br>
+        <br>
+        <label for="Cumpleaños">Fecha Nacimiento: &nbsp &nbsp &nbsp &nbsp</label>
+        <input type="date" id="Nacimiento" name="Nacimiento" min="1900-01-01" max="2022-12-31">
+        <br>
+        <br>
+        <input type="radio" id="masculino" name="genero" value="1">
+        <label for="masculino">Hombre </label> &nbsp &nbsp
+        <input type="radio" id="femenino " name="genero" value="2">
+        <label for="femenino">Mujer </label> &nbsp &nbsp
+        <input type="radio" id="noResponde" name="genero" value="3">
+        <label for="noReponde">No responde </label>
+        <br>
+        <h4>Descríbete brevemente:</h4>
+        <textarea id="descripcion" name="descripcion" rows="7" cols="30" minlength="4" maxlength="20"></textarea>
+        <br>
+        <br>
+        <label for="lenguaje">Escoje tu lenguaje favorito: &nbsp &nbsp</label>
+        <select name="lenguajes" id="lenguajes ">
+            <option value="1">JavaScript</option>
+            <option value="2">Java</option>
+            <option value="3">Python</option>
+        </select>
+        <br>
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
