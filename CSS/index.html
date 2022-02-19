@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        CSS SELECTOR
+    </style>
+    <style>
+        /*comentarios 3 formas de dar estilo a una página*/
+        /*1 forma podemos dar estilo a través de la etiqueta: todos los elementos se ven afectados*/
+        
+        body {
+            background: seashell url("assets/img/SentimientosYOrganosAfectados.jpeg") no-repeat fixed center;
+            background-size: auto;
+            background-color: rgb(200, 100, 150);
+        }
+        
+        p {
+            color: cyan;
+            background-color: orange;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            color: black;
+            background-color: chocolate;
+            text-decoration: none;
+        }
+        /*2 forma por clase (.)*/
+        
+        .parrafo {
+            color: red/*!important*/
+            ;
+            background-color: greenyellow;
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .parrafo {
+            background-color: blanchedalmond;
+        }
+        
+        .web {
+            width: 200px;
+        }
+        /*3 forma por id (#) un elemento*/
+        
+        #P4 {
+            color: black;
+            text-decoration: overline;
+        }
+        
+        #P5 {
+            color: brown;
+            width: 150px;
+            height: 50px;
+        }
+        
+        #tituloh2 {
+            text-align: center;
+        }
+        
+        #div2 {
+            text-align: center;
+            /*sirve para usarlo en padding vertical-align: middle;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 id="tituloh2">algo</h2>
+        <p>parrafo 1</p>
+        <p class="parrafo">parrafo 2</p>
+        <p class="parrafo">parrafo 3</p>
+        <p class="parrafo" id="P4">parrafo 4</p>
+        <p class="parrafo" id="P5">parrafo 5</p>
+        <a href="#">texto</a>
+    </div>
+    <br>
+
+    <div id="div2">
+        <img class="web" src="assets/img/Los7PecadosDigitales.png" alt="Los 7 pecados digitales">
+
+    </div>
+
+</html>
