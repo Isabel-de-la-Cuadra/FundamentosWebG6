@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloques</title>
+    <style>
+        /*CSS reset settings here*/
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #wrapper {
+            width: 950px;
+            background-color: silver;
+            margin: 0px auto;
+            padding: 20px;
+        }
+        
+        #header {
+            min-height: 150px;
+            width: 100%;
+            background-color: green;
+            margin-bottom: 20px;
+        }
+        
+        #navigation {
+            min-height: 300px;
+            width: 21%;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        #main_content {
+            min-height: 400px;
+            background-color: red;
+            display: inline-block;
+            padding: 15px;
+            vertical-align: top;
+        }
+        
+        .subcontents {
+            min-height: 200px;
+            background-color: yellow;
+            display: inline-block;
+        }
+        
+        #advertisement {
+            min-height: 120px;
+            background-color: purple;
+            margin-top: 15px;
+        }
+        
+        #parrafo1 {
+            font-size: 20vw;
+            /*calc(1em + 1vw);*/
+        }
+        /*pantalla*/
+        
+        @media only screen and (min-width: 1024px) {
+            #navigation {
+                width: 21%;
+            }
+            #main_content {
+                width: 74%;
+                margin-left: 10px;
+            }
+            .subcontents {
+                width: 30%;
+                margin-right: 10px;
+            }
+            #advertisement {
+                width: 94%;
+            }
+        }
+        /*tablet*/
+        
+        @media only screen and (min-width: 481px) and (max-width:1023px) {
+            #navigation {
+                display: none;
+            }
+            #main_content {
+                width: 100%;
+            }
+            .subcontents {
+                width: 40%;
+                margin-right: 2%;
+            }
+            #advertisement {
+                width: 100%;
+            }
+        }
+        /*celular*/
+        
+        @media only screen and (max-width: 480px) {
+            #navigation {
+                display: none;
+            }
+            #main_content {
+                width: 100%;
+            }
+            .subcontents {
+                width: 100%;
+            }
+            #advertisement {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <p id="parrafo1">texto de prueba</p>
+        </div>
+        <div id="navigation"></div>
+        <div id="main_content">
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div id="advertisement"></div>
+        </div>
+    </div>
+    <!-- end of wrapper -->
+</body>
+
+</html>
