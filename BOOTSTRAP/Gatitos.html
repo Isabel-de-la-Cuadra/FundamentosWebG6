@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3
+    Gp2irVfcrp" crossorigin="anonymous">
+
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <!--mi estilo-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap</title>
+    <!--
+    body {
+    font-family: 'Redressed', cursive;
+}
+
+#blanco {
+    color: #fff;
+    font-size: 20px;
+}
+    
+    -->
+</head>
+
+<body>
+    <!--inicio nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
+        <div class="container-fluid">
+            <p><i id="blanco" class="text-white fa-solid fa-game-console-handheld"></i></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Otro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--fin nav -->
+    <div class="container mb-5">
+        <h1 class="bg-secondary text-white mt-3 ">Bootstrap</h1>
+        <p class="bg-primary text-white fs-2 ">Probando estilo</p>
+        <p class="bg-primary text-white py-5 ps-2 d-none d-sm-block">Probando estilo</p>
+        <button type="button" class="btn btn-dark py-3">Enviar</button>
+        <button type="button" class="btn btn-danger ms-2 py-3">Reportar</button>
+    </div>
+
+    <section class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="img/gatito1.jpg" class="card-img-top" alt="gatito1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="img/gatito1.jpg" class="card-img-top" alt="gatito1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="img/gatito1.jpg" class="card-img-top" alt="gatito1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-12">
+                <div class="card m-1" style="width: 18rem;">
+                    <img src="img/gatito1.jpg" class="card-img-top" alt="gatito1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-secondary py-3">
+        <p class="text-white text-uppercase text-center fw-light">probando footer</p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
