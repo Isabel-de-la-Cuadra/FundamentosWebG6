@@ -16,16 +16,19 @@
         const PI = 3.1415;
         const LENGUAJE = "Java";
 
+        var numero = 10;
+        var numero2 = 20;
+        console.log(typeof numero);
+        validarFormulario();
 
 
-
-        function validarFormulario() {
+        function miJavascript() {
             console.log("Hola mundo", "!!", 2);
             alert("Hola mundo");
             //El contenido define el tipo de variable
             var nombre = prompt("Ingresa tu nombre");
-            var edad = prompt("ingres tu edad");
-            var edad = parseInt(prompt("ingres tu edad"));
+            var edad = prompt("ingresa tu edad");
+            var edad = parseInt(prompt("ingresa tu edad"));
             //console.log(nombre, parseInt(edad));
             console.log(nombre, edad);
             document.write(nombre);
@@ -33,6 +36,14 @@
             document.write(edad);
             document.write("<br>");
             document.write('<input type="button" class="btn btn-secondary mb-3" value="validar" onclick="validarFormulario();">');
+
+            let nodefinida; //undefined
+            let varnull = null;
+            console.log(nodefinida, varnull);
+        }
+
+        function validarFormulario() {
+
 
 
         }
