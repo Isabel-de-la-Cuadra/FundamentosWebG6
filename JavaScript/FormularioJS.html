@@ -20,7 +20,7 @@
         var numero2 = 20;
         console.log(typeof numero);
 
-        miJavascript(); //llamado a la función
+        /* miJavascript(); //llamado a la función */
 
 
         function miJavascript() {
@@ -47,6 +47,70 @@
         }
 
         function validarFormulario() {
+            //alert("Ingrese tus datos");
+            let nombre = document.getElementById("idNombre").value;
+            let apellido = document.getElementById("idApellido").value;
+            let correo = document.getElementById("correo").value;
+            let password = document.getElementById("password").value;
+            let passwordControl = document.getElementById("passwordControl").value;
+
+            //console.log(apellido);
+            //console.log("¿Su nombre es " + nombre + ", su apellido es " + apellido + ", su correo es " + correo + " y password es " + password + "?");
+            /*if (nombre == "" || apellido == "" || correo == "" || password == "") {
+                alert("Debe completar todos los campos");
+                document.getElementById("idNombre").select();
+            } else {
+                console.log("¿Su nombre es " + nombre + ", su apellido es " + apellido + ", su correo es " + correo + " y password es " + password + "?");
+            }*/
+
+            function validaVacios() {
+                let ningunoVacio = true;
+                if (nombre == "") {
+                    alert("Debe completar el nombre requerido");
+                    document.getElementById("idNombre").select();
+                    ningunoVacio = false;
+                }
+                if (apellido == "") {
+                    alert("Debe completar el apellido requerido");
+                    document.getElementById("apellido").select();
+                    ningunoVacio = false;
+                }
+                if (correo == "") {
+                    alert("Debe completar el correo");
+                    document.getElementById("correo").select();
+                    ningunoVacio = false;
+                }
+                if (password == "") {
+                    alert("Debe completar su password");
+                    document.getElementById("password").select();
+                    ningunoVacio = false;
+                }
+                if (passwordControl == "") {
+                    alert("Debe completar su confirmación de password");
+                    document.getElementById("passwordControl").select();
+                    ningunoVacio = false;
+                }
+
+                return ningunoVacio;
+            }
+
+            if (validaVacios()) {
+                alert("¿Su nombre es " + nombre + ", su apellido es " + apellido + ", su correo es " + correo + " y password es " + password + "?");
+            }
+
+            validaPassword(password, passwordControl);
+
+            function validaPassword(password, passwordControl) {
+                if (password !== passwordControl) {
+                    alert(`Las contraseñas ${password} y ${passwordControl} son distintas, deberían ser iguales.`)
+                    document.getElementById("password").value = "";
+                    document.getElementById("passwordControl").value = "";
+                    document.getElementById("password").select;
+                } else {
+                    alert("Las contraseñas son iguales, FELICITACIONES");
+                }
+
+            }
 
 
 
@@ -62,13 +126,18 @@
         <!-- formulario metodo POST envia los parámetros ocultos-->
         <form action="index.html" method="post">
             <label for="nombre" class="form-label">Nombre: </label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> <br>
+            <input type="text" class="form-control" id="idNombre" name="nombre" placeholder="Ingresa tu nombre"> <br>
             <label for="apellido" class="form-label">Apellido: </label>
-            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresa tu apellido"><br>
+            <input type="text" class="form-control" id="idApellido" name="apellido" placeholder="Ingresa tu apellido"><br>
             <label for="correo" class="form-label">Correo: </label>
             <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresa tu correo electrónico"><br>
             <label for=" password" class="form-label">Password: </label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu password"><br>
+            <label for=" passwordControl" class="form-label">Confirme su Password: </label>
+            <input type="password" class="form-control" id="passwordControl" name="passwordControl" placeholder="Ingresa tu password"><br>
+
+
+
 
             <!--input radio, seleccionar una opción-->
             <input type="radio" class="form-check-input" id="femenino" name="genero" value="1">
