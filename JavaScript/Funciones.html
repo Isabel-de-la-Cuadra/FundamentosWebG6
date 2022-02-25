@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script>
+        var calc = function ejemplo(numero1, numero2) {
+            function suma() {
+                return numero1 + numero2;
+            }
+
+            function resta() {
+                return numero1 - numero2;
+            }
+
+            function multiplicacion() {
+                return numero1 * numero2;
+            }
+
+            function division() {
+                return numero1 / numero2;
+            }
+
+            console.log(suma()); //Solamente está imprimiendo internamente
+            console.log(resta());
+            console.log(division());
+            console.log(multiplicacion());
+
+            return multiplicacion();
+        }
+
+        //No se puede llamar una función interna de otra función
+
+        var operaciones = calc(4, 6); //capturamos el retorno de la función ejemplo
+        console.log("operaciones", operaciones);
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
