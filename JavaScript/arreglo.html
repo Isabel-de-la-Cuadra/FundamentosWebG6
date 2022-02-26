@@ -115,6 +115,54 @@ son ${animales[0]} ${animales[1]} más una ${animales[2].ave} y un ${animales[4]
             document.write(`El id es ${productos.productos[i].id}, el nombre es ${productos.productos[i].nombre}, la descripción es ${productos.productos[i].descripcion}, y el precio es ${productos.productos[i].precio}`)
             document.write("<br>");
         }
+        //for...in (para trabajar con objetos)
+
+        var fruta = {
+            "id": 5,
+            "nombre": "Melocotones",
+            "descripcion": "Natur",
+            "precio": "3.55"
+        }
+
+        for (let clave in fruta) {
+            document.write("clave: ", clave, " valor: ", fruta[clave]);
+            document.write("<br>");
+
+        }
+        //for ... in para arreglos
+        for (let posicion in estudiantes) {
+            document.write("Arreglo posición: ", posicion, " valor: ", estudiantes[posicion]); //posiciones
+            document.write("<br>");
+        }
+
+        //for...of (para trabajar con arreglos) obtener el dato interno del arreglo sin el uso de las posiciones
+        //for of NO SIRVE PARA OBJETOS
+        for (let valor of estudiantes) {
+            document.write("valor: ", valor);
+            document.write("<br>");
+        }
+        document.write("<br>")
+        for (const key in datosPersonales) {
+            if (datosPersonales.hasOwnProperty.call(datosPersonales, key)) {
+                const element = datosPersonales[key];
+                document.write(`Elementos: ${element}`);
+                document.write("<br>");
+            }
+        }
+        document.write("<br>")
+
+        for (let posicion in datosPersonales) {
+            let elemento = datosPersonales[posicion];
+            console.log("", elemento);
+        }
+
+        document.write("<br>")
+
+        for (let posicion in datosPersonales) {
+            let elemento = datosPersonales[posicion];
+            document.write(`Elemento: ${elemento}`);
+            document.write("<br>")
+        }
     </script>
 
 
