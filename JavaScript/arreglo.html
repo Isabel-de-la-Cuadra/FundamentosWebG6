@@ -49,6 +49,72 @@
         document.write(`Hola ${datosPersonales[0]} ${datosPersonales[1]}`);
         document.write("<br>");
         document.write(`Naciste el año ${datosPersonales[2].añoNacimiento} y tu edad es ${datosPersonales[2].edad}`);
+
+        //matrices
+        var matriz3x3 = [
+            [1, 2, 3], //posición 0
+            [4, 5, 6], //posición 1
+            [7, 8, 9] // posición 2
+        ];
+
+        console.log(matriz3x3);
+
+        //(0,0) (0,1) (0,2)
+        //(1,0) (1,1) (1,2)
+        //(2,0) (2,1) (2,2)
+
+        console.log(matriz3x3[1][1]);
+        console.log(matriz3x3[2][1], matriz3x3[2][2]);
+
+        var animales = ["Perro", "Gato", {
+            ave: "guacamaya"
+        }, 2020, "erizo", {
+            lugar: "Chile",
+            ciudad: "Santiago de Chile"
+        }];
+        document.write(`Los animales al año ${animales[3]} en ${animales[5].lugar} en la ciudad de ${animales[5].ciudad}
+son ${animales[0]} ${animales[1]} más una ${animales[2].ave} y un ${animales[4]}`);
+
+
+        var productos = {
+            "productos": [{
+                "id": 1,
+                "nombre": "Pera",
+                "descripcion": "El rincon de Soto",
+                "precio": 12.34
+            }, {
+                "id": 2,
+                "nombre": "Kiwi",
+                "descripcion": "Zespri",
+                "precio": 2.34
+            }, {
+                "id": 3,
+                "nombre": null,
+                "descripcion": null,
+                "precio": null
+            }, {
+                "id": 4,
+                "nombre": null,
+                "descripcion": null,
+                "precio": null
+            }, {
+                "id": 5,
+                "nombre": "Melocotones",
+                "descripcion": "Natur",
+                "precio": "3.55"
+            }]
+        }
+        console.clear();
+        console.log(productos);
+        console.dir(productos.productos); //variable.clave retorna un arreglo para ser iterado
+        console.dir(productos.productos[1].nombre);
+
+        document.write("<br>");
+        //Recorrer arreglos
+        for (let i = 0; i < productos.productos.length; i++) {
+            document.write(`El id es ${productos.productos[i].id}, el nombre es ${productos.productos[i].nombre}, la descripción es ${productos.productos[i].descripcion}, y el precio es ${productos.productos[i].precio}`)
+            document.write("<br>");
+        }
     </script>
 
 
