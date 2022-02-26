@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+    <script>
+        let estudiantes = ["Edinson", "Isabel", "Israel", "Jaime", "José", "Kevin", "Nelson", "Patricia", "Yerkarin"];
+        document.write(estudiantes);
+        document.write("<br>");
+        let vocales = new Array("a", "e", "i", "o", "u");
+        document.write(vocales);
+        document.write("<br>");
+        let arregloVacio = new Array();
+        document.write(arregloVacio);
+        document.write("<br>");
+        //listas
+        let arregloLista = [{
+            nombre: "Edinson"
+        }, {
+            nombre: "Isabel"
+        }, {
+            nombre: "Israel"
+        }, {
+            nombre: "Jaime"
+        }, {
+            nombre: "José"
+        }, {
+            nombre: "Kevin"
+        }, {
+            nombre: "Nelson"
+        }, {
+            nombre: "Patricia"
+        }, {
+            nombre: "Yerkarin"
+        }];
+        console.log(arregloLista);
+
+        console.log(estudiantes[4], arregloLista[4].nombre);
+
+        var datosPersonales = ["Isabel", "de la Cuadra", {
+            edad: 49,
+            añoNacimiento: 1973
+        }, false];
+        console.log(datosPersonales);
+
+        document.write(`Hola ${datosPersonales[0]} ${datosPersonales[1]}`);
+        document.write("<br>");
+        document.write(`Naciste el año ${datosPersonales[2].añoNacimiento} y tu edad es ${datosPersonales[2].edad}`);
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
