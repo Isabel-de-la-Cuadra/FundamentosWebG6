@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="texto" id="texto">Este es un documentos HTML con JavaScript</p>
+    <input class="texto" id="entrada" type="text" placeholder="Ingresa el texto aquí">
+    <button class="texto" id="btn">Clic Aquí</button>
+    <h1 class="titulos">Este también es un documento HTML con JavaScript</h1>
+    <h2 class="titulos">Este otro también es un documento HTML con JavaScript</h2>
+    <p>El texto
+        <spam class="titulos">indicado</spam> fue seleccionado</p>
+    <button class="titulos">Enviar</button>
+    <br>
+
+    <p>
+        Cats: <input name="x" type="radio" value="Cats"> Dogs: <input name="x" type="radio" value="Dogs">
+    </p>
+    <p>
+        <input type="button" onclick="getElements()" value="How many elements named x?">
+    </p>
+    <p id="demo01"></p>
+    <p id="demo02"></p>
+
+    <ul class="my-list">
+        <li>
+            <a a href="http://jQuery.com">jQuery supports</a>
+            <ul>
+                <li><a href="css1">CSS1</a></li>
+                <li><a href="css2">CSS2</a></li>
+                <li><a href="css3">CSS3</a></li>
+                <li>Basic XPath</li>
+            </ul>
+        </li>
+        <li>jQuery also supports
+            <ul>
+                <li>Custom selectors</li>
+                <li>Form selectors</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <td>Row 1</td>
+            <td>Row 2</td>
+            <td>Row 3</td>
+        </tr>
+        <tr>
+            <td>Row 4</td>
+            <td>Row 5</td>
+            <td>Row 6</td>
+        </tr>
+        <tr>
+            <td>Row 7</td>
+            <td>Row 8</td>
+            <td>Row 9</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <div>
+        <span>Juan,</span>
+        <span>Carlos,</span>
+        <span>Manuel,</span>
+        <span>María</span>
+    </div>
+    <div>
+        <span>Rosa,</span>
+        <span>Daniela,</span>
+        <span>Pedro,</span>
+        <span>Paola</span>
+    </div>
+
+
+    <select name="paisese">
+        <option value="Argentina">Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="Brasil">Brasil</option>
+    </select>
+
+    <!--
+    <div>
+        <h2>1</h2>
+        <p>2</p>
+        <h2>3</h2>
+        <p>4</p>
+        <h3>5</h3>
+    </div>
+    -->
+
+
+
+    <script src="ejercicios.js"></script>
+    <script>
+        function getElements() {
+            var x = document.getElementsByName('x');
+            document.getElementById("demo01").innerHTML = x.length;
+
+            var totalElements = $('input[name="x"]').length;
+            $('#demo02').text(totalElements);
+        }
+
+        $(document).ready(function() {
+            $('p:ntd-child(2)').css('color', 'red');
+        });
+    </script>
+</body>
+
+</html>
