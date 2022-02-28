@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Arreglo [], objeto {}
+        var automovil = {
+            //marca: 'Mazda',
+            marca: {
+                nombre: 'Mazda',
+                origen: 'Japón'
+            },
+            modelo: '3 sport',
+            patente: 'LJKH63',
+            color: 'azul',
+            kilometraje: 15000,
+            usado: false,
+            encender: function() {
+                alert('automóvil encendido.');
+            },
+            encender2: function() {
+                //Its not defined
+                //alert('automóvil ' + marca.nombre + ' ' + modelo + 'encendido.');
+                //Funciona con el this
+                alert('automóvil ' + this.marca.nombre + ' ' + this.modelo + 'encendido.');
+                //alert('automóvil ' + marca.nombre + ' ' + modelo + ' encendido.');
+                // marca is not defined
+                alert('automóvil ' + this.marca.nombre + ' ' + this.modelo + ' encendido.');
+
+            }
+
+        };
+        console.log(automovil);
+        //consultar contenido del atributo
+        alert(automovil.marca);
+        //acceder a atributo de la función 
+        console.log(automovil.encender);
+        //ejecutar la variable funcion
+        console.log(automovil.encender());
+        console.log(automovil["encender"]());
+        //acceder por medio de corchetes
+        console.log(automovil['marca']);
+        //acceder a los atributos de objeto interno
+        console.log(automovil.marca.nombre);
+        console.log(automovil['marca'].nombre);
+        console.log(automovil['marca']['nombre'])
+
+        //recorrer for...in
+        for (let clave in automovil) {
+            console.log(`clave: ${clave}, valor: ${automovil[clave]}`);
+        }
+
+        //this: acceder a los atributos del objeto, donde está la función
+        console.log(automovil.encender2());
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos - Ejercicios Clases</title>
+    <script>
+        //Ejercicio this
+        //generar el mensaje (atributo) El resentante del alumno Manuel Pérez es María, quien reside en Chile
+
+        let alumno = {
+            representante: {
+                nombre: 'Maria',
+                edad: 49,
+                lugar: {
+                    pais: 'Chile',
+                    ciudad: 'Santiago de Chile'
+                },
+            },
+            nombre: 'Manuel',
+            apellido: 'Perez',
+            peso: '45kg',
+            edad: 10,
+            amigable: true,
+            mensaje: function() {
+                alert("El representante del alumno " + this.nombre + " " + this.apellido + " es " + this.representante.nombre + " quien reside en " + this.representante.lugar.pais);
+            }
+        };
+
+        alumno.mensaje();
+        console.log(alumno.mensaje());
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

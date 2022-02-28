@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos 03</title>
+
+    <script>
+        function dibujarTabla() {
+            let perros = [{
+                raza: 'Pastor Alemán',
+                origen: 'Alemania',
+                pelaje: 'Lanudo',
+                peso: '33kg',
+                edad: 12
+            }, {
+                raza: 'Poodle',
+                origen: 'Francia',
+                pelaje: 'Lanudo',
+                peso: '20kg',
+                edad: 14
+            }, ];
+            var contenedor = document.getElementById("contenedor");
+            contenedor.innerHTML = "<h1>Tabla de objeto</h1>";
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container" id="contenedor">
+
+    </div>
+    <button onclick="dibujarTabla()"> Crear tabla</button>
+
+
+
+</body>
+
+</html>
