@@ -115,9 +115,10 @@
                 $("#nombre").val("Ahora nos vamos al recreo"); //reemplaza el valor del input
             });
 
-            //ATTR() obtener/asignar el valor a un atributo
+            //ATTR() obtener/asignar el valor a un atributo, puede ser la clase, el id, el src, alt, etc
             $("#btn20").click(function() {
-                alert($("img").attr("alt"));
+                alert($("img").attr("alt")); //obteniendo de imagen el alt
+                $("#btn1").attr("class", "btn btn-danger"); //asigna una nueva clase al boton 1
             });
 
 
@@ -143,7 +144,7 @@
         <div id="efex">
             <!--prepend-->
             <br>
-            <img src="niño-estudiando-ordenador-geometria-matematicas-dibujo.png" alt="Niño Estudiando">
+            <img src="niño-estudiando-ordenador-geometria-matematicas-dibujo.png" alt="Niño Estudiando" style="width: 200px; height: auto; background-color:aqua">
             <input type="text" class="form-class" id="nombre" value="texto por default">
             <p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original
                 exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
