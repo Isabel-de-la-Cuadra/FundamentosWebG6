@@ -101,17 +101,26 @@
                                 </div>`);
             }); //reemplaza todo lo que está en el id
 
+            //text
             $("#btn18").click(function() {
                 let texto = $("p").text(); //captura el texto del o los p
                 alert(texto); //la muestra como alerta
                 $("p").text("Ya estoy con ganas de recreo"); //los reemplaza
             });
 
+            //val(), input, select y textarea
             $("#btn19").click(function() {
                 let valor = $("#nombre").val(); //captura el input, check box, select y textarea
                 alert(valor); //la muestra como alerta
                 $("#nombre").val("Ahora nos vamos al recreo"); //reemplaza el valor del input
             });
+
+            //ATTR() obtener/asignar el valor a un atributo
+            $("#btn20").click(function() {
+                alert($("img").attr("alt"));
+            });
+
+
 
             //eventos
 
@@ -133,7 +142,9 @@
         <!--before-->
         <div id="efex">
             <!--prepend-->
-            <input type="text" class="form-class" id="nombre">
+            <br>
+            <img src="niño-estudiando-ordenador-geometria-matematicas-dibujo.png" alt="Niño Estudiando">
+            <input type="text" class="form-class" id="nombre" value="texto por default">
             <p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original
                 exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
             </p>
@@ -183,6 +194,10 @@
         <hr>
         <button class="btn btn-primary" id="btn18">función text()</button>
         <button class="btn btn-secondary" id="btn19">función val()</button>
+
+        <br>
+        <hr>
+        <button class="btn btn-success" id="btn20">función attr()</button>
 
     </div>
 
